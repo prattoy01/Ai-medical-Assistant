@@ -21,6 +21,8 @@ git push origin main
 5. Set **Build Command** to: `pip install -r requirements.txt`
 6. Set **Start Command** to: `gunicorn --bind 0.0.0.0:$PORT app:app`
 
+**Note**: The `railway.json` and `Procfile` are now in the `backend/` directory, so Railway will automatically detect the correct start command.
+
 ### 3. Add PostgreSQL Database
 1. In your project, click "New Service"
 2. Select "Database" → "PostgreSQL"
