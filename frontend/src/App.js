@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<SignInForm />} />
           <Route path="/register" element={<RegistrationForm />} />
+          <Route path="/signup" element={<Navigate to="/register" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/" element={<Navigate to="/login" replace />} />

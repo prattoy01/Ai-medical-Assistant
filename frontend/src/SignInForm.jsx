@@ -181,10 +181,10 @@ export default function SignInForm() {
             Don't have an account yet?{' '}
             <span
               className="text-yellow-400 cursor-pointer hover:text-yellow-300 hover:underline transition-all duration-200 focus:outline-none focus:underline"
-              onClick={() => navigate('/signup')}
+              onClick={() => navigate('/register')}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
-                  navigate('/signup');
+                  navigate('/register');
                 }
               }}
               tabIndex={0}

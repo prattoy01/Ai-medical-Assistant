@@ -1,8 +1,8 @@
 // Configuration for different environments
 const config = {
   development: {
-    API_BASE_URL: 'http://localhost:5000',
-    UPLOAD_BASE_URL: 'http://localhost:5000'
+    API_BASE_URL: 'http://localhost:5001',
+    UPLOAD_BASE_URL: 'http://localhost:5001'
   },
   production: {
     API_BASE_URL: process.env.REACT_APP_API_URL || 'https://your-backend-url.railway.app',
