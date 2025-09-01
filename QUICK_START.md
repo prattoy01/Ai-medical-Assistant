@@ -21,7 +21,14 @@ git push origin main
 5. Set **Build Command** to: `pip install -r requirements.txt`
 6. Set **Start Command** to: `chmod +x start.sh && ./start.sh`
 
-**Note**: The `railway.json`, `Procfile`, `start.sh`, and `wsgi.py` are now in the `backend/` directory. Railway will automatically detect the correct start command.
+**Note**: Multiple configuration files are now in the `backend/` directory:
+- `railway.json` / `railway.toml` - Railway configuration
+- `Procfile` - Heroku-style process file
+- `start.sh` - Custom start script with debugging
+- `wsgi.py` / `main.py` - Alternative entry points
+- `test_app.py` - App validation script
+
+Railway should automatically detect and use the correct start command.
 
 ### 3. Add PostgreSQL Database
 1. In your project, click "New Service"
